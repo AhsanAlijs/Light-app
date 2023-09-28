@@ -19,12 +19,13 @@ togal.addEventListener('click', function () {
 main.addEventListener('mouseover', function (event) {
     if (event.target.tagName === 'IMG') {
         // Check if the mouse is over an image inside the '.light' element
-        main.innerHTML = `<img src="./onn.png" class="images" alt="Light is off"><br>
+        main.innerHTML = `
+        <img src="./onn.png" alt="light" class="images1"><br>
                         <h2 style="color:green;">Light is Onn</h2>
         `;
     } else {
         // The mouse is over the '.light' element, but not the image
-        main.innerHTML = `<img src="./oF.png" class="images1" alt="Light is on"><br>
+        main.innerHTML = `<img src="./OF.png" alt="light" class="images"><br>
         <h2 style="color:red;">Light is Off</h2>`;
     }
 });
